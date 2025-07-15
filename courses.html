@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كورسات التعليم</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style/courses.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <nav class="navbar" style="display:flex; justify-content:flex-end; align-items:center;">
+    <div class="logo" style="font-size:1.8rem; font-weight:700; color:#4020f8; margin-left:auto;">سبيلك</div>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="#courses">الكورسات</a></li>
+      <li><a href="#teachers">المعلمين</a></li>
+      <li><a href="#booking">سجل الان</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+  </nav>
+
+  <section class="header-section" id="home" style="background: url('image/education/BG.jpg') center center/cover no-repeat, linear-gradient(135deg, rgba(64,158,191,0.85) 0%, rgba(111,214,255,0.85) 100%); background-blend-mode: overlay;">
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <h4>كورسات تعليمية أونلاين</h4>
+      <h2>تعلم وطور مهاراتك</h2>
+      <p>
+        منصة متخصصة لتقديم كورسات في أهم المواد العلمية مع أفضل المعلمين وبأسلوب تفاعلي حديث.
+      </p>
+      <div class="cta-buttons">
+        <a href="#courses" class="cta-btn primary">تصفح الكورسات</a>
+        <a href="#teachers" class="cta-btn secondary">تعرف على المعلمين</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-section" id="courses">
+    <h2>كورساتنا</h2>
+    <div class="courses-grid">
+      <div class="course-item">
+        <img src="image/education/pic3.jpeg" alt="رياضيات">
+        <div class="course-title">الرياضيات</div>
+        <div class="course-description">
+          تعلم أساسيات الرياضيات، الجبر، الهندسة، التفاضل والتكامل مع تمارين تفاعلية وشروحات مبسطة.
+        </div>
+      </div>
+      <div class="course-item">
+        <img src="image/education/pic4.jpg" alt="فيزياء">
+        <div class="course-title">الفيزياء</div>
+        <div class="course-description">
+          استكشف قوانين الفيزياء، الحركات، الطاقة، والكهرباء مع تطبيقات عملية وتجارب افتراضية.
+        </div>
+      </div>
+      <div class="course-item">
+        <img src="image/education/pic2.jpeg" alt="انجليزي">
+        <div class="course-title">اللغة الإنجليزية</div>
+        <div class="course-description">
+          تطوير مهارات القراءة، الكتابة، المحادثة والاستماع في اللغة الإنجليزية لجميع المستويات.
+        </div>
+      </div>
+      <div class="course-item">
+        <img src="image/education/pic1.png" alt="كيمياء">
+        <div class="course-title">الكيمياء</div>
+        <div class="course-description">
+          فهم أساسيات الكيمياء، التفاعلات، الجدول الدوري، والتجارب الكيميائية بطريقة ممتعة.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="teachers-section" id="teachers">
+    <h2>معلمو المواد</h2>
+    <div class="filter-buttons" style="text-align:center; margin-bottom: 30px;">
+  <button class="filter-btn active" data-filter="all">الكل</button>
+  <button class="filter-btn" data-filter="رياضيات">رياضيات</button>
+  <button class="filter-btn" data-filter="فيزياء">فيزياء</button>
+  <button class="filter-btn" data-filter="إنجليزي">إنجليزي</button>
+  <button class="filter-btn" data-filter="كيمياء">كيمياء</button>
+</div>
+
+    <div class="teachers-grid">
+  <!-- رياضيات -->
+<div class="iteacher-card" data-subject="رياضيات" data-schedule='{
+  "الأحد": ["09:00", "11:00"],
+  "الثلاثاء": ["10:00", "12:00"]
+}'>
+  <img src="image/education/teacher.jpg" alt="أ. عبدالسلام البرعصي">
+  <h3>أ. عبدالسلام البرعصي</h3>
+  <div class="subject">معلم رياضيات</div>
+  <p>خبرة أكثر من 10 سنوات في تدريس الرياضيات للمرحلتين الثانوية والجامعية. متخصص في تبسيط المفاهيم الصعبة ورفع مستوى الطلاب.</p>
+  <div class="schedule">
+    <strong>مواعيد العمل:</strong>
+    <ul>
+      <li>الأحد: 09:00 - 11:00</li>
+      <li>الثلاثاء: 10:00 - 12:00</li>
+    </ul>
+  </div>
+</div>
+
+<div class="iteacher-card" data-subject="رياضيات" data-schedule='{
+  "الإثنين": ["08:00", "10:00"],
+  "الخميس": ["12:00", "14:00"]
+}'>
+  <img src="image/education/teacher.jpg" alt="أ. فاطمة بن موسى">
+  <h3>أ. فاطمة بن موسى</h3>
+  <div class="subject">معلمة رياضيات</div>
+  <p>حاصلة على ماجستير في الرياضيات، تركز على تطوير التفكير المنطقي لدى الطلاب وتقديم شروحات تفاعلية.</p>
+  <div class="schedule">
+    <strong>مواعيد العمل:</strong>
+    <ul>
+      <li>الإثنين: 08:00 - 10:00</li>
+      <li>الخميس: 12:00 - 14:00</li>
+    </ul>
+  </div>
+</div>
+
+<!-- فيزياء -->
+<div class="iteacher-card" data-subject="فيزياء" data-schedule='{
+  "الثلاثاء": ["09:00", "11:00"],
+  "الخميس": ["14:00", "16:00"]
+}'>
+  <img src="image/education/teacher.jpg" alt="أ. محمد الفيتوري">
+  <h3>أ. محمد الفيتوري</h3>
+  <div class="subject">معلم فيزياء</div>
+  <p>مدرس فيزياء بخبرة 12 سنة، يربط بين الفيزياء والحياة اليومية ويستخدم التجارب الافتراضية في الشرح.</p>
+  <div class="schedule">
+    <strong>مواعيد العمل:</strong>
+    <ul>
+      <li>الثلاثاء: 09:00 - 11:00</li>
+      <li>الخميس: 14:00 - 16:00</li>
+    </ul>
+  </div>
+</div>
+
+<div class="iteacher-card" data-subject="فيزياء" data-schedule='{
+  "الأحد": ["10:00", "12:00"],
+  "الأربعاء": ["13:00", "15:00"]
+}'>
+  <img src="image/education/teacher.jpg" alt="أ. ريم الترهوني">
+  <h3>أ. ريم الترهوني</h3>
+  <div class="subject">معلمة فيزياء</div>
+  <p>متخصصة في الفيزياء الحديثة، تشرح المفاهيم المعقدة بطريقة مبسطة وتستخدم وسائل تعليمية مبتكرة.</p>
+  <div class="schedule">
+    <strong>مواعيد العمل:</strong>
+    <ul>
+      <li>الأحد: 10:00 - 12:00</li>
+      <li>الأربعاء: 13:00 - 15:00</li>
+    </ul>
+  </div>
+</div>
+
+<!-- إنجليزي -->
+<div class="iteacher-card" data-subject="إنجليزي" data-schedule='{
+  "الإثنين": ["11:00", "13:00"],
+  "الخميس": ["09:00", "11:00"]
+}'>
+  <img src="image/education/teacher.jpg" alt="أ. أحمد الشريف">
+  <h3>أ. أحمد الشريف</h3>
+  <div class="subject">معلم لغة إنجليزية</div>
+  <p>خبرة في تدريس اللغة الإنجليزية لجميع المستويات، يركز على المحادثة والتواصل الفعال.</p>
+  <div class="schedule">
+    <strong>مواعيد العمل:</strong>
+    <ul>
+      <li>الإثنين: 11:00 - 13:00</li>
+      <li>الخميس: 09:00 - 11:00</li>
+    </ul>
+  </div>
+</div>
+
+<div class="iteacher-card" data-subject="إنجليزي" data-schedule='{
+  "الأحد": ["08:00", "10:00"],
+  "الثلاثاء": ["14:00", "16:00"]
+}'>
+  <img src="image/education/teacher.jpg" alt="أ. منى الورفلي">
+  <h3>أ. منى الورفلي</h3>
+  <div class="subject">معلمة لغة إنجليزية</div>
+  <p>تستخدم أساليب تفاعلية لتطوير مهارات الطلاب في الاستماع والكتابة، وتهيئ الطلاب لاختبارات اللغة الدولية.</p>
+  <div class="schedule">
+    <strong>مواعيد العمل:</strong>
+    <ul>
+      <li>الأحد: 08:00 - 10:00</li>
+      <li>الثلاثاء: 14:00 - 16:00</li>
+    </ul>
+  </div>
+</div>
+
+<!-- كيمياء -->
+<div class="iteacher-card" data-subject="كيمياء" data-schedule='{
+  "الإثنين": ["13:00", "15:00"],
+  "الخميس": ["10:00", "12:00"]
+}'>
+  <img src="image/education/teacher.jpg" alt="أ. وليد الزوي">
+  <h3>أ. وليد الزوي</h3>
+  <div class="subject">معلم كيمياء</div>
+  <p>متخصص في الكيمياء العضوية، يشرح التفاعلات الكيميائية بطريقة عملية ويحفز الطلاب على البحث العلمي.</p>
+  <div class="schedule">
+    <strong>مواعيد العمل:</strong>
+    <ul>
+      <li>الإثنين: 13:00 - 15:00</li>
+      <li>الخميس: 10:00 - 12:00</li>
+    </ul>
+  </div>
+</div>
+
+<div class="iteacher-card" data-subject="كيمياء" data-schedule='{
+  "الثلاثاء": ["09:00", "11:00"],
+  "الجمعة": ["08:00", "10:00"]
+}'>
+  <img src="image/education/teacher.jpg" alt="أ. هدى العريبي">
+  <h3>أ. هدى العريبي</h3>
+  <div class="subject">معلمة كيمياء</div>
+  <p>تستخدم التجارب الافتراضية لجعل الكيمياء ممتعة وسهلة الفهم لجميع الطلاب.</p>
+  <div class="schedule">
+    <strong>مواعيد العمل:</strong>
+    <ul>
+      <li>الثلاثاء: 09:00 - 11:00</li>
+      <li>الجمعة: 08:00 - 10:00</li>
+    </ul>
+  </div>
+</div>
+
+
+  </section>
+
+  <section class="booking-section" id="booking" style="background: linear-gradient(135deg, #409ebf 0%, #6fd6ff 100%); padding: 80px 20px; color: #fff;">
+    <h2 style="text-align:center; font-size:2.5rem; margin-bottom:3rem; font-weight:bold;">سجل في كورس الآن</h2>
+    <form class="booking-form" style="max-width:600px; margin:0 auto; background:rgba(255,255,255,0.1); padding:40px; border-radius:15px; backdrop-filter:blur(10px);">
+      <div class="form-group" style="margin-bottom:20px;">
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" name="name" required style="width:100%; padding:12px; border:none; border-radius:8px; font-size:1rem; font-family:inherit;">
+      </div>
+      <div class="form-group" style="margin-bottom:20px;">
+        <label for="phone">رقم الهاتف</label>
+        <input type="tel" id="phone" name="phone" required style="width:100%; padding:12px; border:none; border-radius:8px; font-size:1rem; font-family:inherit;">
+      </div>
+      <div class="form-group" style="margin-bottom:20px;">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" required style="width:100%; padding:12px; border:none; border-radius:8px; font-size:1rem; font-family:inherit;">
+      </div>
+      <div class="form-group" style="margin-bottom:20px;">
+        <label for="course">اختر الكورس</label>
+        <select id="course" name="course" required style="width:100%; padding:12px; border:none; border-radius:8px; font-size:1rem; font-family:inherit;">
+          <option value="">اختر الكورس</option>
+          <option value="math">الرياضيات</option>
+          <option value="physics">الفيزياء</option>
+          <option value="english">اللغة الإنجليزية</option>
+          <option value="chemistry">الكيمياء</option>
+        </select>
+      </div>
+      <div class="form-group" style="margin-bottom:20px;">
+        <label for="iteacher">اختر المعلم</label>
+        <select id="iteacher" name="iteacher" required style="width:100%; padding:12px; border:none; border-radius:8px; font-size:1rem; font-family:inherit;">
+          <option value="">اختر المعلم</option>
+          
+        </select>
+      </div>
+      
+      <div class="form-group" style="margin-bottom:20px;">
+        <label for="time">الوقت المفضل</label>
+        <select id="time" name="time" required style="width:100%; padding:12px; border:none; border-radius:8px; font-size:1rem; font-family:inherit;">
+        </select>
+      </div>
+      <div class="form-group" style="margin-bottom:20px;">
+        <label for="notes">ملاحظات إضافية</label>
+        <textarea id="notes" name="notes" placeholder="اكتب أي ملاحظات أو استفسارات..." style="width:100%; padding:12px; border:none; border-radius:8px; font-size:1rem; font-family:inherit; height:100px; resize:vertical;"></textarea>
+      </div>
+      <button type="submit" class="submit-btn" style="background:#fff; color:#409ebf; border:none; border-radius:25px; padding:15px 40px; font-size:1.1rem; font-weight:600; cursor:pointer; transition:all 0.3s ease; width:100%;">إرسال طلب التسجيل</button>
+    </form>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>تواصل معنا</h2>
+    <div class="contact-content">
+      <p>للاستفسار عن الكورسات أو التسجيل، يرجى التواصل عبر:</p>
+      <p><i class="fas fa-envelope"></i> Sabeelak@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +218945338966</p>
+      <p><i class="fas fa-map-marker-alt"></i> النوفليين، طرابلس - ليبيا</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com/sabeelak"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com/sabeelak"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sabeelak"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.whatsapp.com/sabeelak"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    جميع الحقوق محفوظة &copy; موقع سبيلك 2025
+  </footer>
+
+ 
+  <script>
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+  const teacherCards = document.querySelectorAll(".iteacher-card");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      // إزالة تفعيل الزر السابق
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      // القيمة المطلوبة للفلترة
+      const filterValue = button.getAttribute("data-filter");
+
+      teacherCards.forEach(card => {
+        const subject = card.getAttribute("data-subject");
+
+        if (filterValue === "all" || filterValue === subject) {
+          card.style.display = "block"; // إظهار البطاقة
+        } else {
+          card.style.display = "none";  // إخفاء البطاقة
+        }
+      });
+    });
+  });
+    // تحديث قائمة المعلمين حسب المادة المختارة
+    const teachersByCourse = {
+      math: [
+        { value: 'teacher1', label: 'أ. عبدالسلام البرعصي' },
+        { value: 'teacher2', label: 'أ. فاطمة بن موسى' }
+      ],
+      physics: [
+        { value: 'teacher3', label: 'أ. محمد الفيتوري' },
+        { value: 'teacher4', label: 'أ. ريم الترهوني' }
+      ],
+      english: [
+        { value: 'teacher5', label: 'أ. أحمد الشريف' },
+        { value: 'teacher6', label: 'أ. منى الورفلي' }
+      ],
+      chemistry: [
+        { value: 'teacher7', label: 'أ. وليد الزوي' },
+        { value: 'teacher8', label: 'أ. هدى العريبي' }
+      ]
+    };
+
+    function updateTeachers() {
+      const courseSelect = document.getElementById('course');
+      const teacherSelect = document.getElementById('iteacher');
+      const selectedCourse = courseSelect.value;
+
+      teacherSelect.innerHTML = '';
+      const defaultOption = document.createElement('option');
+      defaultOption.value = '';
+      defaultOption.textContent = 'اختر المعلم';
+      teacherSelect.appendChild(defaultOption);
+
+      if (teachersByCourse[selectedCourse]) {
+        teachersByCourse[selectedCourse].forEach(iteacher => {
+          const option = document.createElement('option');
+          option.value = iteacher.value;
+          option.textContent = iteacher.label;
+          teacherSelect.appendChild(option);
+        });
+      }
+
+      updateAvailableTimes();
+    }
+
+    function updateAvailableTimes() {
+      const teacherSelect = document.getElementById('iteacher');
+      const timeSelect = document.getElementById('time');
+      const selectedTeacherValue = teacherSelect.value;
+
+      timeSelect.innerHTML = '';
+      const defaultOption = document.createElement('option');
+      defaultOption.value = '';
+      defaultOption.textContent = 'اختر الوقت';
+      timeSelect.appendChild(defaultOption);
+
+      const teacherCards = document.querySelectorAll('.iteacher-card');
+      teacherCards.forEach(card => {
+        const teacherName = card.querySelector('h3').textContent;
+        const scheduleData = card.getAttribute('data-schedule');
+
+        if (!scheduleData) return;
+
+        const schedule = JSON.parse(scheduleData);
+        const match = teacherSelect.options[teacherSelect.selectedIndex].textContent.includes(teacherName);
+
+        if (match) {
+          const arabicDaysOrder = ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+          arabicDaysOrder.forEach(day => {
+            if (schedule[day]) {
+              const [start, end] = schedule[day];
+              let startHour = parseInt(start.split(':')[0]);
+              let endHour = parseInt(end.split(':')[0]);
+
+              for (let h = startHour; h < endHour; h++) {
+                const hour = h.toString().padStart(2, '0') + ':00';
+                const option = document.createElement('option');
+                option.value = `${day} - ${hour}`;
+                option.textContent = `${day} - ${hour} ${h < 12 ? 'صباحاً' : 'مساءً'}`;
+                timeSelect.appendChild(option);
+              }
+            }
+          });
+        }
+      });
+    }
+
+    document.getElementById('course').addEventListener('change', updateTeachers);
+    document.getElementById('iteacher').addEventListener('change', updateAvailableTimes);
+
+    // رسالة نجاح عند إرسال الطلب
+    document.querySelector('.booking-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('تم إرسال طلب التسجيل بنجاح! سنتواصل معك قريباً.');
+      this.reset();
+      updateTeachers();
+    });
+
+    // عند تحميل الصفحة
+    updateTeachers();
+  </script>
+</body>
+</html>

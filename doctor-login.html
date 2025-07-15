@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تسجيل دخول مقدم خدمات</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/doctor-login.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style/doctor-login.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">سبيلك</div>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="return false;">الخدمات</a>
+                <ul class="dropdown-content">
+                    <li><a href="dental.html">طب أسنان</a></li>
+                    <li><a href="courses.html">حجوزات تعليم</a></li>
+                    <li><a href="sports.html">خدمات رياضية</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#about">من نحن</a></li>
+            <li><a href="index.html#contact">تواصل معنا</a></li>
+            <li><a href="doctor-login.html" style="color:#4e73df;">تسجيل الدخول</a></li>
+        </ul>
+    </nav>
+    <div class="container" style="display:flex; justify-content:center; align-items:center; min-height:80vh;">
+        
+<a id="showSignUp"></a>
+<div class="cont" >
+  <div class="form">
+    <div class="form1">
+      <h2>تسجيل الدخول</h2>
+      <form action="serpanel.html" method="get">
+      <input type="email" placeholder="البريد اﻹلكتروني" required>
+      <input type="password" placeholder="كلمة المرور" required>
+      <button class="login-btn" type="submit">تسجيل الدخول</button>
+     
+      </form>
+    </div>
+    <div class="form1">
+      <h2>إنشاء حساب</h2>
+      <a class="sinup-btn" href="doctors.html"> تسجبل حساب جديد</a>
+      <a class="sinup-btn" href="https://www.facebook.com" style="background : blue;">التسجيل بـ فيسبوك</a>
+      <a class="sinup-btn" href="https://www.google.com" style="background: red;"> التسجيل بـ بجوجل</a>
+    </div>
+  </div>
+  
+  <div class="over">
+    <h2>مرحبا بكم</h2>
+    <p>ادخل بحسابك للحصول على ميزات اضافية وعروض</p>
+    <a href="#showSignUp" id="signUpBtn" class="toggle-btn">التسجيل</a>
+    <a href="#" id="signInBtn" class="toggle-btn">تسجيل الدخول</a>
+  </div>
+</div>
+        </form>
+    </div>
+</body>
+</html>

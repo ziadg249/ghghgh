@@ -1,0 +1,147 @@
+/* قسم Hero */
+.hero {
+  padding: 4rem 0;
+  background-color: var(--bg-color);
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1976d2;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* بطاقات الخدمات */
+.service-cards {
+  padding: 4rem 0;
+  background-color: var(--secondary-color);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* قسم المميزات */
+.features {
+  padding: 4rem 0;
+  background-color: var(--bg-color);
+}
+
+.features h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.feature-item i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* التجاوب مع الشاشات */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

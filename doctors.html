@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل مقدم خدمة - Star Coffee</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/doctors.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar" style="display:flex; justify-content:flex-end; align-items:center;">
+    <div class="logo" style="font-size:1.8rem; font-weight:700; color:#2e7d32; margin-left:auto;">سبيلك</div>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="services.html">الخدمات</a></li>
+      <li><a href="index.html#about">من نحن</a></li>
+      <li><a href="index.html#contact">تواصل معنا</a></li>
+      <li><a href="doctor-login.html" style="color:#4e73df;">تسجيل الدخول</a></li>
+    </ul>
+  </nav>
+
+  <section class="provider-registration">
+    <div class="container">
+      <h1>تسجيل مقدم خدمة جديد</h1>
+      <form class="registration-form" action="serpanel.html" method="get">
+        <div class="form-group">
+          <label for="fullname">الاسم الثلاثي</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">رقم الهاتف</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="specialization">التخصص</label>
+          <select id="specialization" name="specialization" required onchange="updateServiceLocation()">
+            <option value="">اختر التخصص</option>
+            <option value="dentist">طب أسنان</option>
+            <option value="courses">حجوزات تعليم</option>
+            <option value="sports">خدمات رياضية</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="degree">الدرجة العلمية</label>
+          <select id="degree" name="degree" required>
+            <option value="">اختر الدرجة العلمية</option>
+            <option value="bachelor">بكالوريوس</option>
+            <option value="license">ليسانس</option>
+            <option value="master">ماجستير</option>
+            <option value="phd">دكتوراة</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="workdays">أيام العمل</label>
+          <div class="workdays-checkboxes">
+            <label class="checkbox-label">
+              <input type="checkbox" name="workdays" value="sunday"> الأحد
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="workdays" value="monday"> الاثنين
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="workdays" value="tuesday"> الثلاثاء
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="workdays" value="wednesday"> الأربعاء
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="workdays" value="thursday"> الخميس
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service-location">موقع الخدمة</label>
+          <select id="service-location" name="service-location" required>
+            <option value="">اختر موقع الخدمة</option>
+          </select>
+        </div>
+       
+
+        <!-- زر التسجيل بعد التعديلات -->
+        <button class="submit-button" type="submit">تسجيل مقدم الخدمة</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function updateServiceLocation() {
+      const specialization = document.getElementById('specialization').value;
+      const locationSelect = document.getElementById('service-location');
+      locationSelect.innerHTML = '<option value="">اختر موقع الخدمة</option>';
+
+      if (specialization === 'dentist') {
+        const locations = ['عيادة أسنان', 'مركز أسنان'];
+        locations.forEach(location => {
+          const option = document.createElement('option');
+          option.value = location;
+          option.textContent = location;
+          locationSelect.appendChild(option);
+        });
+      } else if (specialization === 'courses') {
+        const locations = ['مركز تعليمي', 'تعليم عن بعد'];
+        locations.forEach(location => {
+          const option = document.createElement('option');
+          option.value = location;
+          option.textContent = location;
+          locationSelect.appendChild(option);
+        });
+      } else if (specialization === 'sports') {
+        const locations = ['نادي رياضي', 'مركز صحي رياضي'];
+        locations.forEach(location => {
+          const option = document.createElement('option');
+          option.value = location;
+          option.textContent = location;
+          locationSelect.appendChild(option);
+        });
+      }
+    }
+  </script>
+</body>
+</html>

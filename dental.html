@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجز مواعيد طب الأسنان</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style/dental.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar" style="display:flex; justify-content:flex-end; align-items:center;">
+    <div class="logo" style="font-size:1.8rem; font-weight:700; color:#6f4e37; margin-left:auto;">سبيلك</div>
+    <ul class="nav-links">
+      <li class="active"><a href="index.html">الرئيسية</a></li>
+      <li><a href="#about">نبذة عنا</a></li>
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#doctors">الأطباء</a></li>
+      <li><a href="#booking">حجز موعد</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+  </nav>
+
+  <section class="header-section" id="home">
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <h4>خدمة حجز المواعيد عبر الإنترنت</h4>
+      <h2>احجز موعدك الآن</h2>
+      <p>
+        اكتشف سهولة حجز المواعيد. نوفر لك منصة مبتكرة تمكنك من حجز مواعيدك بسهولة ويسر، مع توفير خيارات متعددة للتوافق
+        مع جدولك.
+      </p>
+      <div class="cta-buttons">
+        <a href="#booking" class="cta-btn primary">احجز موعدك الآن</a>
+        <a href="#services" class="cta-btn secondary">تعرف على خدماتنا</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-img">
+      <img src="image/dental/background.jpg" alt="عيادة أسنان">
+    </div>
+    <div class="about-content">
+      <h2>من نحن</h2>
+      <div class="divider"></div>
+      <p>
+        نحن عيادة أسنان متخصصة نقدم أفضل الخدمات الطبية في مجال طب الأسنان، مع فريق من الأطباء المتميزين وأحدث التقنيات
+        الطبية.
+      </p>
+      <p>
+        نسعى لتحسين تجربة حجز المواعيد الطبية عبر الإنترنت، من خلال تقديم حلٍّ فعّال وموثوق للمرضى والمحترفين الطبيين.
+      </p>
+      <a href="#services" class="more-btn">
+        <i class="fas fa-arrow-left" style="margin-right: 8px;"></i>
+        اعرف أكثر
+      </a>
+    </div>
+  </section>
+
+  <section class="dentist-services" id="services">
+    <h2>خدماتنا</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="image/dental/pic4.jpeg" alt="تقويم الأسنان">
+        <div class="service-title">تقويم الأسنان</div>
+        <div class="service-description">
+          تقويم الأسنان باستخدام أحدث التقنيات والأجهزة المتطورة لضمان أفضل النتائج في تصحيح اعوجاج الأسنان والفكين.
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="image/dental/pic1.jpg" alt="جراحة الأسنان">
+        <div class="service-title">جراحة الأسنان</div>
+        <div class="service-description">
+          جراحات الأسنان المختلفة مع استخدام التخدير الموضعي والتقنيات الحديثة لعلاج الحالات المعقدة.
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="image/dental/pic2.png" alt="تنظيف الأسنان">
+        <div class="service-title">تنظيف الأسنان</div>
+        <div class="service-description">
+          تنظيف الأسنان وإزالة الجير والبقع باستخدام أجهزة متطورة للحفاظ على صحة الفم واللثة.
+        </div>
+      </div>
+      <div class="service-item">
+        <img src="image/dental/pic3.jpg" alt="أشعة تشخيصية">
+        <div class="service-title">أشعة تشخيصية</div>
+        <div class="service-description">
+          تصوير أشعة بانورامية وتشخيصية دقيقة للكشف عن مشاكل الأسنان والفكين قبل العلاج.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="doctors-section" id="doctors">
+    <h2>فريق الأطباء</h2>
+    <div id="filter-buttons" style="text-align:center; margin-bottom:30px;">
+      <button class="filter-btn" data-specialty="all">الكل</button>
+      <button class="filter-btn" data-specialty="تقويم الأسنان">تقويم الأسنان</button>
+      <button class="filter-btn" data-specialty="جراحة الأسنان">جراحة الأسنان</button>
+      <button class="filter-btn" data-specialty="تنظيف الأسنان">تنظيف الأسنان</button>
+      <button class="filter-btn" data-specialty="أشعة تشخيصية">أشعة تشخيصية</button>
+    </div>
+
+    <div class="doctors-grid">
+      <!-- تقويم الأسنان -->
+      <!-- تقويم الأسنان -->
+      <div class="doctor-card" data-specialty="تقويم الأسنان" data-schedule='{
+  "الأحد": ["10:00", "12:00"],
+  "الثلاثاء": ["13:00", "15:00"]
+}'>
+        <img src="image/dental/doctor.jpg" alt="د. عبدالسلام البرعصي">
+        <div class="doctor-info">
+          <h3>د. عبدالسلام البرعصي</h3>
+          <div class="specialty">أخصائي تقويم الأسنان</div>
+          <div class="experience">خبرة 12 سنة في تصحيح اعوجاج الأسنان والفكين</div>
+          <div class="schedule">
+            <strong>مواعيد العمل:</strong>
+            <ul>
+              <li>الأحد: 10:00 - 12:00</li>
+              <li>الثلاثاء: 13:00 - 15:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-specialty="تقويم الأسنان" data-schedule='{
+  "الإثنين": ["09:00", "11:00"],
+  "الخميس": ["14:00", "16:00"]
+}'>
+        <img src="image/dental/doctor.jpg" alt="د. محمد بن عثمان">
+        <div class="doctor-info">
+          <h3>د. محمد بن عثمان</h3>
+          <div class="specialty">أخصائي تقويم الأسنان</div>
+          <div class="experience">خبرة 10 سنوات في تقويم الأسنان للأطفال والبالغين</div>
+          <div class="schedule">
+            <strong>مواعيد العمل:</strong>
+            <ul>
+              <li>الإثنين: 09:00 - 11:00</li>
+              <li>الخميس: 14:00 - 16:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- جراحة الأسنان -->
+      <div class="doctor-card" data-specialty="جراحة الأسنان" data-schedule='{
+  "الأربعاء": ["10:00", "12:00"],
+  "الجمعة": ["13:00", "15:00"]
+}'>
+        <img src="image/dental/doctor.jpg" alt="د. أحمد الشيباني">
+        <div class="doctor-info">
+          <h3>د. أحمد الشيباني</h3>
+          <div class="specialty">جراح أسنان</div>
+          <div class="experience">خبرة 15 سنة في جراحات الفم والأسنان المعقدة</div>
+          <div class="schedule">
+            <strong>مواعيد العمل:</strong>
+            <ul>
+              <li>الأربعاء: 10:00 - 12:00</li>
+              <li>الجمعة: 13:00 - 15:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-specialty="جراحة الأسنان" data-schedule='{
+  "الإثنين": ["08:00", "10:00"],
+  "الخميس": ["12:00", "14:00"]
+}'>
+        <img src="image/dental/doctor.jpg" alt="د. عبدالرؤوف الترهوني">
+        <div class="doctor-info">
+          <h3>د. عبدالرؤوف الترهوني</h3>
+          <div class="specialty">جراح أسنان</div>
+          <div class="experience">متخصص في جراحة ضروس العقل وزراعة الأسنان</div>
+          <div class="schedule">
+            <strong>مواعيد العمل:</strong>
+            <ul>
+              <li>الإثنين: 08:00 - 10:00</li>
+              <li>الخميس: 12:00 - 14:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- تنظيف الأسنان -->
+      <div class="doctor-card" data-specialty="تنظيف الأسنان" data-schedule='{
+  "الثلاثاء": ["09:00", "11:00"],
+  "الخميس": ["14:00", "16:00"]
+}'>
+        <img src="image/dental/doctor.jpg" alt="د. وليد الزوي">
+        <div class="doctor-info">
+          <h3>د. وليد الزوي</h3>
+          <div class="specialty">أخصائي تنظيف الأسنان</div>
+          <div class="experience">خبرة 8 سنوات في تنظيف الأسنان وإزالة الجير</div>
+          <div class="schedule">
+            <strong>مواعيد العمل:</strong>
+            <ul>
+              <li>الثلاثاء: 09:00 - 11:00</li>
+              <li>الخميس: 14:00 - 16:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-specialty="تنظيف الأسنان" data-schedule='{
+  "الأحد": ["11:00", "13:00"],
+  "الأربعاء": ["09:00", "11:00"]
+}'>
+        <img src="image/dental/doctor.jpg" alt="د. عبدالمجيد العريبي">
+        <div class="doctor-info">
+          <h3>د. عبدالمجيد العريبي</h3>
+          <div class="specialty">أخصائي تنظيف الأسنان</div>
+          <div class="experience">متخصص في تلميع الأسنان والعناية باللثة</div>
+          <div class="schedule">
+            <strong>مواعيد العمل:</strong>
+            <ul>
+              <li>الأحد: 11:00 - 13:00</li>
+              <li>الأربعاء: 09:00 - 11:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- أشعة تشخيصية -->
+      <div class="doctor-card" data-specialty="أشعة تشخيصية" data-schedule='{
+  "الثلاثاء": ["08:00", "10:00"],
+  "الجمعة": ["11:00", "13:00"]
+}'>
+        <img src="image/dental/doctor.jpg" alt="د. محمد الفيتوري">
+        <div class="doctor-info">
+          <h3>د. محمد الفيتوري</h3>
+          <div class="specialty">أخصائي أشعة تشخيصية</div>
+          <div class="experience">خبرة 9 سنوات في التصوير الشعاعي للأسنان والفكين</div>
+          <div class="schedule">
+            <strong>مواعيد العمل:</strong>
+            <ul>
+              <li>الثلاثاء: 08:00 - 10:00</li>
+              <li>الجمعة: 11:00 - 13:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-specialty="أشعة تشخيصية" data-schedule='{
+  "الإثنين": ["10:00", "12:00"],
+  "الأربعاء": ["14:00", "16:00"]
+}'>
+        <img src="image/dental/doctor.jpg" alt="د. عبدالسلام الورفلي">
+        <div class="doctor-info">
+          <h3>د. عبدالسلام الورفلي</h3>
+          <div class="specialty">أخصائي أشعة تشخيصية</div>
+          <div class="experience">متخصص في تشخيص مشاكل الفم باستخدام الأشعة الرقمية</div>
+          <div class="schedule">
+            <strong>مواعيد العمل:</strong>
+            <ul>
+              <li>الإثنين: 10:00 - 12:00</li>
+              <li>الأربعاء: 14:00 - 16:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+
+  <section class="booking-section" id="booking">
+    <h2>احجز موعدك الآن</h2>
+    <form class="booking-form">
+      <div class="form-group">
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">رقم الهاتف</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="service">نوع الخدمة</label>
+        <select id="service" name="service" required>
+          <option value="">اختر الخدمة</option>
+          <option value="orthodontics">تقويم الأسنان</option>
+          <option value="surgery">جراحة الأسنان</option>
+          <option value="cleaning">تنظيف الأسنان</option>
+          <option value="xray"> أشعة تشخيصية</option>
+
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="doctor">اختر الطبيب</label>
+        <select id="doctor" name="doctor" required>
+          <option value="">اختر الطبيب</option>
+          <option data-specialty="orthodontics" value="dr-barassi">د. عبدالسلام البرعصي</option>
+          <option data-specialty="orthodontics" value="dr-othman">د. محمد بن عثمان</option>
+          <option data-specialty="surgery" value="dr-shaibani">د. أحمد الشيباني</option>
+          <option data-specialty="surgery" value="dr-tarhouni">د. عبدالرؤوف الترهوني</option>
+          <option data-specialty="cleaning" value="dr-zawi">د. وليد الزوي</option>
+          <option data-specialty="cleaning" value="dr-arybi">د. عبدالمجيد العريبي</option>
+          <option data-specialty="xray" value="dr-fituri">د. محمد الفيتوري</option>
+          <option data-specialty="xray" value="dr-warfali">د. عبدالسلام الورفلي</option>
+        </select>
+
+      </div>
+     
+      <div class="form-group">
+        <label for="time">الوقت المفضل</label>
+        <select id="time" name="time" required>
+          <option value="">اختر الوقت</option>
+          
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="notes">ملاحظات إضافية</label>
+        <textarea id="notes" name="notes" placeholder="اكتب أي ملاحظات أو استفسارات..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">إرسال طلب الحجز</button>
+    </form>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>تواصل معنا</h2>
+    <div class="contact-content">
+      <p>للاستفسار عن الخدمات أو الحجز، يرجى التواصل عبر:</p>
+      <p><i class="fas fa-envelope"></i> Sabeelak@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +218945338966</p>
+      <p><i class="fas fa-map-marker-alt"></i> النوفليين، طرابلس - ليبيا</p>
+    </div>
+  </section>
+
+  <footer>
+    
+      <div class="social-links">
+        <a href="https://www.facebook.com/sabeelak"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com/sabeelak"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sabeelak"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.whatsapp.com/sabeelak"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      
+        جميع الحقوق محفوظة &copy; موقع سبيلك 2025
+      
+      
+    
+  </footer>
+
+  <script>
+    const doctorsByService = {
+      orthodontics: [
+        { value: 'dr-barassi', label: 'د. عبدالسلام البرعصي' },
+        { value: 'dr-othman', label: 'د. محمد بن عثمان' }
+      ],
+      surgery: [
+        { value: 'dr-shaibani', label: 'د. أحمد الشيباني' },
+        { value: 'dr-tarhouni', label: 'د. عبدالرؤوف الترهوني' }
+      ],
+      cleaning: [
+        { value: 'dr-zawi', label: 'د. وليد الزوي' },
+        { value: 'dr-arybi', label: 'د. عبدالمجيد العريبي' }
+      ],
+      xray: [
+        { value: 'dr-fituri', label: 'د. محمد الفيتوري' },
+        { value: 'dr-warfali', label: 'د. عبدالسلام الورفلي' }
+      ]
+    };
+
+    const scheduleByDoctor = {
+      'dr-barassi': { "الأحد": ["10:00", "12:00"], "الثلاثاء": ["13:00", "15:00"] },
+      'dr-othman': { "الإثنين": ["09:00", "11:00"], "الخميس": ["14:00", "16:00"] },
+      'dr-shaibani': { "الأربعاء": ["10:00", "12:00"], "الجمعة": ["13:00", "15:00"] },
+      'dr-tarhouni': { "الإثنين": ["08:00", "10:00"], "الخميس": ["12:00", "14:00"] },
+      'dr-zawi': { "الثلاثاء": ["09:00", "11:00"], "الخميس": ["14:00", "16:00"] },
+      'dr-arybi': { "الأحد": ["11:00", "13:00"], "الأربعاء": ["09:00", "11:00"] },
+      'dr-fituri': { "الثلاثاء": ["08:00", "10:00"], "الجمعة": ["11:00", "13:00"] },
+      'dr-warfali': { "الإثنين": ["10:00", "12:00"], "الأربعاء": ["14:00", "16:00"] }
+    };
+
+    // ✅ عند تحميل الصفحة، تفريغ القوائم وتعطيلها
+    window.addEventListener('DOMContentLoaded', () => {
+      const doctorSelect = document.getElementById('doctor');
+      const timeSelect = document.getElementById('time');
+      doctorSelect.innerHTML = '<option value="">اختر الطبيب</option>';
+      timeSelect.innerHTML = '<option value="">اختر الوقت</option>';
+      
+    });
+
+    // ✅ عند اختيار الخدمة: تعبئة الأطباء وتمكين الحقل
+    document.getElementById('service').addEventListener('change', function () {
+      const selectedService = this.value;
+      const doctorSelect = document.getElementById('doctor');
+      const timeSelect = document.getElementById('time');
+
+      doctorSelect.innerHTML = '<option value="">اختر الطبيب</option>';
+      timeSelect.innerHTML = '<option value="">اختر الوقت</option>';
+      
+
+      
+
+      doctorsByService[selectedService].forEach(doc => {
+        const option = document.createElement('option');
+        option.value = doc.value;
+        option.textContent = doc.label;
+        doctorSelect.appendChild(option);
+      });
+
+      d
+    });
+
+    // ✅ عند اختيار الطبيب: عرض الأوقات وتمكين القائمة
+    document.getElementById('doctor').addEventListener('change', function () {
+      const doctorId = this.value;
+      const timeSelect = document.getElementById('time');
+
+      timeSelect.innerHTML = '<option value="">اختر الوقت</option>';
+
+      const schedule = scheduleByDoctor[doctorId];
+      
+
+      const daysOrder = ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+
+      daysOrder.forEach(day => {
+        if (schedule[day]) {
+          const [start, end] = schedule[day];
+          let startHour = parseInt(start.split(':')[0]);
+          let endHour = parseInt(end.split(':')[0]);
+
+          for (let h = startHour; h < endHour; h++) {
+            const hourStr = h.toString().padStart(2, '0') + ':00';
+            const period = h < 12 ? 'صباحاً' : 'مساءً';
+
+            const option = document.createElement('option');
+            option.value = `${day} - ${hourStr}`;
+            option.textContent = `${day} - ${hourStr} ${period}`;
+            timeSelect.appendChild(option);
+          }
+        }
+      });
+
+      
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const doctorCards = document.querySelectorAll('.doctor-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const specialty = button.getAttribute('data-specialty');
+
+        doctorCards.forEach(card => {
+          const cardSpecialty = card.getAttribute('data-specialty');
+          
+          if (specialty === 'all' || specialty === cardSpecialty) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // تمييز الزر النشط (اختياري)
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+  });
+
+    // ✅ Form submission handler
+    document.querySelector('.booking-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('تم إرسال طلب الحجز بنجاح! سنتواصل معك قريباً.');
+      this.reset();
+    });
+
+    
+
+    // ✅ Active section highlight
+    window.addEventListener('scroll', function () {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.parentElement.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.parentElement.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

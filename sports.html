@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الرياضة والصحة</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style/sports.css" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar" style="display:flex; justify-content:flex-end; align-items:center;">
+    <div class="logo" style="font-size:1.8rem; font-weight:700; color:#3c1cf0; margin-left:auto;">سبيلك</div>
+    <ul class="nav-links">
+      <li class="active"><a href="index.html">الرئيسية</a></li>
+      <li><a href="#courses">التخصصات</a></li>
+      <li><a href="#teachers">المدربين</a></li>
+      <li><a href="#booking">حجز موعد</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+  </nav>
+
+  <section class="header-section" id="home">
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <h4>خدمات رياضية وصحية متكاملة</h4>
+      <h2>طور لياقتك وصحتك مع أفضل الخبراء</h2>
+      <p>منصة تجمع نخبة المدربين والخبراء في كمال الأجسام، اللياقة البدنية، التغذية، والعلاج الرياضي الطبيعي.</p>
+      <div class="cta-buttons">
+        <a href="#courses" class="cta-btn primary">تصفح التخصصات</a>
+        <a href="#teachers" class="cta-btn secondary">تعرف على المدربين</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-section" id="courses">
+    <h2>التخصصات الرياضية</h2>
+    <div class="courses-grid">
+      <!-- التخصصات الرياضية هنا -->
+      <div class="course-item">
+        <img src="image/sport/pic1.jpg" alt="كمال أجسام">
+        <div class="course-title">كمال أجسام</div>
+        <div class="course-description">
+          برامج تدريبية متكاملة لبناء العضلات وزيادة القوة تحت إشراف مدربين محترفين.
+        </div>
+      </div>
+      <div class="course-item">
+        <img src="image/sport/pic2.png" alt="لياقة بدنية">
+        <div class="course-title"> لياقة بدنية</div>
+        <div class="course-description">
+          خطط لياقة بدنية مخصصة لتحسين الصحة العامة والرشاقة وزيادة النشاط اليومي.
+        </div>
+      </div>
+      <div class="course-item">
+        <img src="image/sport/pic3.jpg" alt="تغذية">
+        <div class="course-title">تغذية رياضية</div>
+        <div class="course-description">
+          استشارات غذائية فردية وجداول تغذية متوازنة لتحقيق أهدافك الصحية والرياضية.
+        </div>
+      </div>
+      <div class="course-item">
+        <img src="image/sport/pic4.png" alt="علاج رياضي">
+        <div class="course-title">علاج رياضي</div>
+        <div class="course-description">
+          جلسات علاج وتأهيل رياضي بإشراف مختصين لعلاج الإصابات وتحسين الأداء.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="teachers-section" id="teachers">
+    <h2>فريق المدربين والخبراء</h2>
+
+    <!-- ✅ أزرار الفلترة -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">الكل</button>
+      <button class="filter-btn" data-filter="bodybuilding">كمال أجسام</button>
+      <button class="filter-btn" data-filter="fitness">لياقة بدنية</button>
+      <button class="filter-btn" data-filter="nutrition">تغذية</button>
+      <button class="filter-btn" data-filter="therapy">علاج رياضي</button>
+    </div>
+
+    <div class="teachers-grid">
+      <!-- كمال أجسام -->
+      <!-- داخل قسم المدربين -->
+      <div class="teacher-card" data-category="bodybuilding" data-schedule='{
+      "الأحد": ["09:00", "10:00", "11:00"],
+      "الثلاثاء": ["12:00", "14:00"],
+     "الخميس": ["09:00", "15:00"]
+    }'>
+        <img src="image/sport/pic5.webp" alt="كابتن اسعد الحور">
+        <h3>كابتن اسعد الحور</h3>
+        <div class="subject">مدرب كمال أجسام</div>
+        <p>خبرة 12 سنة في تدريب كمال الأجسام.</p>
+        <div class="schedule">
+          <strong>مواعيد العمل:</strong>
+          <ul>
+            <li>الأحد: 09:00 - 11:00</li>
+            <li>الثلاثاء: 12:00 - 14:00</li>
+            <li>الخميس: 09:00 - 15:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- كابتن ايوب منكوسة -->
+      <div class="teacher-card" data-category="bodybuilding" data-schedule='{
+  "الإثنين": ["10:00", "12:00"],
+  "الأربعاء": ["13:00", "15:00"],
+  "الجمعة": ["08:00", "10:00"]
+}'>
+        <img src="image/sport/pic5.webp" alt="كابتن ايوب منكوسة">
+        <h3>كابتن ايوب منكوسة</h3>
+        <div class="subject">مدرب كمال أجسام</div>
+        <p>مدرب معتمد لتطوير القوة البدنية.</p>
+        <div class="schedule">
+          <strong>مواعيد العمل:</strong>
+          <ul>
+            <li>الإثنين: 10:00 - 12:00</li>
+            <li>الأربعاء: 13:00 - 15:00</li>
+            <li>الجمعة: 08:00 - 10:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- كابتن وسام الزقوزي -->
+      <div class="teacher-card" data-category="fitness" data-schedule='{
+  "الأحد": ["07:00", "09:00"],
+  "الثلاثاء": ["16:00", "18:00"]
+}'>
+        <img src="image/sport/pic6.jpg" alt="كابتن وسام الزقوزي">
+        <h3>كابتن وسام الزقوزي</h3>
+        <div class="subject">مدرب لياقة بدنية</div>
+        <p>خبرة 10 سنوات في تحسين اللياقة.</p>
+        <div class="schedule">
+          <strong>مواعيد العمل:</strong>
+          <ul>
+            <li>الأحد: 07:00 - 09:00</li>
+            <li>الثلاثاء: 16:00 - 18:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- كابتن محمد الغويل -->
+      <div class="teacher-card" data-category="fitness" data-schedule='{
+  "الإثنين": ["10:00", "11:30"],
+  "الأربعاء": ["14:00", "15:30"]
+}'>
+        <img src="image/sport/pic6.jpg" alt="كابتن محمد الغويل">
+        <h3>كابتن محمد الغويل</h3>
+        <div class="subject">مدربة لياقة بدنية</div>
+        <p>متخصصة في تمارين الكارديو والمرونة.</p>
+        <div class="schedule">
+          <strong>مواعيد العمل:</strong>
+          <ul>
+            <li>الإثنين: 10:00 - 11:30</li>
+            <li>الأربعاء: 14:00 - 15:30</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- د. أحمد الشريف -->
+      <div class="teacher-card" data-category="nutrition" data-schedule='{
+  "الأحد": ["11:00", "13:00"],
+  "الثلاثاء": ["09:00", "10:30"],
+  "الخميس": ["12:00", "14:00"]
+}'>
+        <img src="image/sport/pic7.webp" alt="د. أحمد الشريف">
+        <h3>د. أحمد الشريف</h3>
+        <div class="subject">خبير تغذية</div>
+        <p>استشارات غذائية مخصصة للرياضيين.</p>
+        <div class="schedule">
+          <strong>مواعيد العمل:</strong>
+          <ul>
+            <li>الأحد: 11:00 - 13:00</li>
+            <li>الثلاثاء: 09:00 - 10:30</li>
+            <li>الخميس: 12:00 - 14:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- د. علي محمود -->
+      <div class="teacher-card" data-category="nutrition" data-schedule='{
+  "الإثنين": ["15:00", "17:00"],
+  "الأربعاء": ["08:00", "10:00"]
+}'>
+        <img src="image/sport/pic7.webp" alt="د. علي محمود">
+        <h3>د. علي محمود</h3>
+        <div class="subject">خبير تغذية</div>
+        <p>خطط غذائية متوازنة لجميع الأعمار.</p>
+        <div class="schedule">
+          <strong>مواعيد العمل:</strong>
+          <ul>
+            <li>الإثنين: 15:00 - 17:00</li>
+            <li>الأربعاء: 08:00 - 10:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- أ. السيد الشريف -->
+      <div class="teacher-card" data-category="therapy" data-schedule='{
+  "الأحد": ["13:00", "15:00"],
+  "الخميس": ["10:00", "12:00"]
+}'>
+        <img src="image/sport/pic8.png" alt="أ. السيد الشريف">
+        <h3>أ. السيد الشريف</h3>
+        <div class="subject">معالج رياضي طبيعي</div>
+        <p>يعالج الإصابات ويضع برامج تأهيل.</p>
+        <div class="schedule">
+          <strong>مواعيد العمل:</strong>
+          <ul>
+            <li>الأحد: 13:00 - 15:00</li>
+            <li>الخميس: 10:00 - 12:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- أ. شعبان جانتي -->
+      <div class="teacher-card" data-category="therapy" data-schedule='{
+  "الثلاثاء": ["09:00", "11:00"],
+  "الجمعة": ["14:00", "16:00"]
+}'>
+        <img src="image/sport/pic8.png" alt="أ. شعبان جانتي">
+        <h3>أ. شعبان جانتي</h3>
+        <div class="subject">معالج رياضي طبيعي</div>
+        <p>متخصص في إعادة التأهيل وتحسين الأداء.</p>
+        <div class="schedule">
+          <strong>مواعيد العمل:</strong>
+          <ul>
+            <li>الثلاثاء: 09:00 - 11:00</li>
+            <li>الجمعة: 14:00 - 16:00</li>
+          </ul>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- باقي الأقسام: الحجز - التواصل -->
+
+  <section class="booking-section" id="booking">
+    <h2>احجز الآن</h2>
+    <form class="booking-form">
+      <div class="form-group">
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">رقم الهاتف</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="service">اختر التخصص</label>
+        <select id="service" name="service" required>
+          <option value="">اختر التخصص</option>
+          <option value="bodybuilding">مدرب كمال أجسام</option>
+          <option value="fitness">مدرب لياقة بدنية</option>
+          <option value="nutrition">خبير تغذية</option>
+          <option value="therapy">معالج رياضي طبيعي</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="teacher">اختر المدرب/الخبير</label>
+        <select id="teacher" name="teacher" required>
+          
+        </select>
+      </div>
+     
+      <div class="form-group">
+        <label for="time">الوقت المفضل</label>
+        <select id="time" name="time" required>
+          
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="notes">ملاحظات إضافية</label>
+        <textarea id="notes" name="notes" placeholder="اكتب أي ملاحظات أو استفسارات..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">إرسال طلب الحجز</button>
+    </form>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>تواصل معنا</h2>
+    <div class="contact-content">
+      <p>للاستفسار عن الجلسات أو التسجيل، يرجى التواصل عبر:</p>
+      <p><i class="fas fa-envelope"></i> Sabeelak@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +218945338966</p>
+      <p><i class="fas fa-map-marker-alt"></i> النوفليين، طرابلس - ليبيا</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-links">
+        <a href="https://www.facebook.com/sabeelak"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com/sabeelak"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sabeelak"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.whatsapp.com/sabeelak"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    جميع الحقوق محفوظة &copy; موقع سبيلك 2025
+  </footer>
+
+  <script>
+   
+    // فلترة المدربين حسب التخصص
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        const cards = document.querySelectorAll('.teacher-card');
+
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // بيانات المدربين حسب نوع الخدمة
+    const teachersByService = {
+      bodybuilding: [
+        { value: 'coach1', label: 'كابتن اسعد الحور' },
+        { value: 'coach2', label: 'كابتن ايوب منكوسة' }
+      ],
+      fitness: [
+        { value: 'coach3', label: 'كابتن وسام الزقوزي' },
+        { value: 'coach4', label: 'كابتن محمد الغويل' }
+      ],
+      nutrition: [
+        { value: 'coach5', label: 'د. أحمد الشريف' },
+        { value: 'coach6', label: 'د. علي محمود' }
+      ],
+      therapy: [
+        { value: 'coach7', label: 'أ. السيد الشريف' },
+        { value: 'coach8', label: 'أ. شعبان جانتي ' }
+      ]
+    };
+
+    // جدول الأوقات المتاحة لكل مدرب (مثال)
+    const scheduleByTeacher = {
+      coach1: {
+        "الأحد": ["09:00", "10:00", "11:00"],
+        "الثلاثاء": ["12:00", "14:00"],
+        "الخميس": ["09:00", "15:00"]
+      },
+      coach2: {
+        "الإثنين": ["10:00", "12:00"],
+        "الأربعاء": ["13:00", "15:00"],
+        "الجمعة": ["08:00", "10:00"]
+      },
+      coach3: {
+        "الأحد": ["07:00", "09:00"],
+        "الثلاثاء": ["16:00", "18:00"]
+      },
+      coach4: {
+        "الإثنين": ["10:00", "11:30"],
+        "الأربعاء": ["14:00", "15:30"]
+      },
+      coach5: {
+        "الأحد": ["11:00", "13:00"],
+        "الثلاثاء": ["09:00", "10:30"],
+        "الخميس": ["12:00", "14:00"]
+      },
+      coach6: {
+        "الإثنين": ["15:00", "17:00"],
+        "الأربعاء": ["08:00", "10:00"]
+      },
+      coach7: {
+        "الأحد": ["13:00", "15:00"],
+        "الخميس": ["10:00", "12:00"]
+      },
+      coach8: {
+        "الثلاثاء": ["09:00", "11:00"],
+        "الجمعة": ["14:00", "16:00"]
+      }
+    };
+
+
+    // تحديث قائمة المدربين حسب نوع الخدمة
+    function updateTeachers() {
+      const serviceSelect = document.getElementById('service');
+      const teacherSelect = document.getElementById('teacher');
+      const timeSelect = document.getElementById('time');
+      const selectedService = serviceSelect?.value;
+      if (!teacherSelect) return;
+
+      teacherSelect.innerHTML = '';
+      const defaultOption = document.createElement('option');
+      defaultOption.value = '';
+      defaultOption.textContent = 'اختر المدرب/الخبير';
+      teacherSelect.appendChild(defaultOption);
+
+      if (teachersByService[selectedService]) {
+        teachersByService[selectedService].forEach(teacher => {
+          const option = document.createElement('option');
+          option.value = teacher.value;
+          option.textContent = teacher.label;
+          teacherSelect.appendChild(option);
+        });
+      }
+
+      // إعادة تعيين قائمة الأوقات
+      if (timeSelect) {
+        timeSelect.innerHTML = '<option value="">اختر الوقت</option>';
+      }
+    }
+
+    // ✅ تحديث الأوقات المتاحة حسب المدرب
+    function updateAvailableTimes() {
+      const teacherSelect = document.getElementById('teacher');
+      const timeSelect = document.getElementById('time');
+      if (!teacherSelect || !timeSelect) return;
+
+      const selectedTeacher = teacherSelect.value;
+      timeSelect.innerHTML = '<option value="">اختر الوقت</option>';
+
+      const schedule = scheduleByTeacher[selectedTeacher];
+      if (!schedule) return;
+
+      const daysOrder = ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+      daysOrder.forEach(day => {
+        if (schedule[day]) {
+          const [start, end] = schedule[day];
+          let startHour = parseInt(start.split(':')[0]);
+          let endHour = parseInt(end.split(':')[0]);
+
+          for (let h = startHour; h < endHour; h++) {
+            const hour = h.toString().padStart(2, '0') + ':00';
+            const option = document.createElement('option');
+            option.value = `${day} - ${hour}`;
+            option.textContent = `${day} - ${hour} ${h < 12 ? 'صباحاً' : 'مساءً'}`;
+            timeSelect.appendChild(option);
+          }
+        }
+      });
+    }
+
+    // الأحداث
+    document.getElementById('service')?.addEventListener('change', () => {
+      updateTeachers();
+      updateAvailableTimes();
+    });
+
+    document.getElementById('teacher')?.addEventListener('change', updateAvailableTimes);
+
+    document.querySelector('.booking-form')?.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('تم إرسال طلب الحجز بنجاح! سنتواصل معك قريباً.');
+      this.reset();
+      updateTeachers();
+      updateAvailableTimes();
+    });
+
+    // تحميل مبدئي
+    updateTeachers();
+    updateAvailableTimes();
+  </script>
+
+</body>
+
+</html>
